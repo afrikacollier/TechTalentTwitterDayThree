@@ -24,7 +24,7 @@
 				</span>
 			</h2>
 			<h5>Joined <span th:text="${#dates.format(user.createdAt, 'MMMM dd, yyyy')}"></span></h5>
-			
+			<div th:replace="fragments/tweetListheader"></div>
 			<div th:replace="fragments/tweetlist"></div>
 		</div>
 	</body>

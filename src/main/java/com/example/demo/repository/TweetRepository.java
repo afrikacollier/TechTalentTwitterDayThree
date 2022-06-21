@@ -13,4 +13,5 @@ public interface TweetRepository extends CrudRepository<Tweet, Long> {
 	List<Tweet> findAllByOrderByCreatedAtDesc();
 	List<Tweet> findAllByUserOrderByCreatedAtDesc(UserProfile user);
 	List<Tweet> findAllByUserInOrderByCreatedAtDesc(List<UserProfile> users);
+	List<Tweet> findByTags_PhraseOrderByCreatedAtDesc(String phrase);
 }

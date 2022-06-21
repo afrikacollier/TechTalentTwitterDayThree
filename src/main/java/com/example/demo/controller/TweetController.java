@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.example.demo.models.Tweet;
@@ -29,6 +30,14 @@ public class TweetController {
 		List<Tweet> tweets = tweetService.findAll();
 		model.addAttribute("tweetList", tweets);
 		return "feed";
+	}
+	
+	@GetMapping(value= {"/tweets/{tag}"})
+	public String getTweetsByTag(@PathVariable(value="tag") String tag, Model model) {
+		List<Tweet> tweets = tweetService.findAllWithTag(tag);
+		model.addAttribute("tweetList", tweets);
+		model.addAttribute("tag", tag);
+		return "tagTweets";
 	}
 	
 	@GetMapping(value="/tweets/new")
