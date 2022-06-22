@@ -8,7 +8,18 @@
 	</head>
 	<body>
 		<div class="container">
-			<div th:replace="/fragments/navbar"></div>
+			<div th:replace="fragments/navbar"></div>
+			<ul class="nav nav-tabs">
+				<li role="presentation" 
+					th:classappend="${filter=='all' ? 'active' : ''}">
+					<a href="/tweets">All</a>
+				</li>
+				<li role="presentation"
+					th:classappend="${filter == 'following' ? 'active' : ''}">
+					<a href="/tweets?filter=following">Following</a>
+				</li>			
+			</ul>
+			<br/>
 			<div th:replace="fragments/tweetListheader"></div>
 			<div th:replace="fragments/tweetlist"></div>
 		</div>

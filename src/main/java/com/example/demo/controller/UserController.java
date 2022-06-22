@@ -9,8 +9,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 
-import com.example.demo.models.Tweet;
+import com.example.demo.models.TweetDisplay;
 import com.example.demo.models.UserProfile;
 import com.example.demo.service.TweetService;
 import com.example.demo.service.UserService;
@@ -31,7 +32,7 @@ public class UserController {
 		UserProfile loggedInUser = userService.getLoggedInUser();
 		
 		UserProfile user = userService.findByUsername(username);
-		List<Tweet> tweets = tweetService.findAllByUser(user);
+		List<TweetDisplay> tweets = tweetService.findAllByUser(user);
 		List<UserProfile> following = loggedInUser.getFollowing();
 		boolean isFollowing = false;
 		for(UserProfile followedUser : following ) {
@@ -48,12 +49,28 @@ public class UserController {
 	}
 	
 	@GetMapping(value = "/users")
-	public String getUsers(Model model) {
-		List<UserProfile> users = userService.findAll();
-		model.addAttribute("users", users);
-		
+	public String getUsers(@RequestParam(value= "filter", required=false) String filter, Model model) {
+		List<UserProfile> users = null;
 		UserProfile loggedInUser = userService.getLoggedInUser();
 		List<UserProfile> usersFollowing = loggedInUser.getFollowing();
+		List<UserProfile> usersFollowers = loggedInUser.getFollowers();
+		if(filter == null) {
+			filter = "all";
+		}
+		if(filter.equalsIgnoreCase("followers")) {
+			users = usersFollowers;
+			model.addAttribute("filter", "followers");
+		}else if(filter.equalsIgnoreCase("following")) {
+			users = usersFollowing;
+			model.addAttribute("filter", "following");
+		}else {
+			users = userService.findAll();
+			model.addAttribute("filter", "all");
+		
+		}
+		model.addAttribute("users", users);
+		
+				
 		SetFollowingStatus(users, usersFollowing, model);
 		SetTweetCounts(users, model);
 		return "users";
@@ -78,7 +95,7 @@ public class UserController {
 		//Find tweetcouns here. TODO!
 		
 		for(UserProfile user : users) {
-			List<Tweet> tweets = tweetService.findAllByUser(user);
+			List<TweetDisplay> tweets = tweetService.findAllByUser(user);
 			tweetCounts.put(user.getUsername(), tweets.size());
 		}
 		

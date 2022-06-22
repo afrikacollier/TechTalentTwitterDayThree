@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.demo.models.Tweet;
+import com.example.demo.models.TweetDisplay;
 import com.example.demo.models.UserProfile;
 import com.example.demo.service.TweetService;
 import com.example.demo.service.UserService;
@@ -26,38 +27,30 @@ public class TweetController {
 	@Autowired
 	private TweetService tweetService;
 	
-//	@GetMapping(value= {"/tweets", "/"})
-//	public String getFeed(@RequestParam(value="filter", required=false) String filter, Model model) {
-//		UserProfile loggedInUser = userService.getLoggedInUser();
-//		
-//		List<TweetDisplay> tweets = null;
-//		if(filter == null) {
-//			filter = "all";
-//		}
-//		if(filter.equalsIgnoreCase("following")) {
-//			List<UserProfile> following = loggedInUser.getFollowing();
-//			tweets = tweetService.findAllByUsers(following);
-//			model.addAttribute("filter", "following");
-//		}else { //filter="all"
-//			tweets = tweetService.findAll();
-//			model.addAttribute("filter", "all");
-//		}
-//		
-//		model.addAttribute("tweetList", tweets);
-//		return "feed";
-//	}
-	
-	
 	@GetMapping(value= {"/tweets", "/"})
-	public String getFeed(Model model) {
-		List<Tweet> tweets = tweetService.findAll();
+	public String getFeed(@RequestParam(value="filter", required=false) String filter, Model model) {
+		UserProfile loggedInUser = userService.getLoggedInUser();
+		
+		List<TweetDisplay> tweets = null;
+		if(filter == null) {
+			filter = "all";
+		}
+		if(filter.equalsIgnoreCase("following")) {
+			List<UserProfile> following = loggedInUser.getFollowing();
+			tweets = tweetService.findAllByUsers(following);
+			model.addAttribute("filter", "following");
+		}else { //filter="all"
+			tweets = tweetService.findAll();
+			model.addAttribute("filter", "all");
+		}
+		
 		model.addAttribute("tweetList", tweets);
 		return "feed";
 	}
 	
 	@GetMapping(value= {"/tweets/{tag}"})
 	public String getTweetsByTag(@PathVariable(value="tag") String tag, Model model) {
-		List<Tweet> tweets = tweetService.findAllWithTag(tag);
+		List<TweetDisplay> tweets = tweetService.findAllWithTag(tag);
 		model.addAttribute("tweetList", tweets);
 		model.addAttribute("tag", tag);
 		return "taggedTweets";
