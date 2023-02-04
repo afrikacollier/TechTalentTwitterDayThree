@@ -1,6 +1,6 @@
 <h1 align="center"> Tech Talent Twitter </h1>
 <h3 align="center"> Tech Talent & Strategy (i.e. Tech Talent South) </h3>
-<h5 align="center"> Project Assignment - <a href="https://www.concordia.ca/">Tech Talent & Strategy</a> (June 2022) </h5>
+<h5 align="center"> Project Assignment - <a href="https://www.linkedin.com/company/tech-talent-south">Tech Talent & Strategy</a> (June 2022) </h5>
 
 <p align="center"> 
   <img src="gif/pacman_game.gif" alt="Animated gif pacman game" height="282px" width="637">
