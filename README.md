@@ -45,11 +45,47 @@
 <h2 id="project-files-description"> :floppy_disk: Project Files Description</h2>
 
 <ul>
-  <li><b>search.py</b> - Where all of the search algorithms reside.</li>
-  <li><b>searchAgents.py</b> - Where all of the search-based agents reside.</li>
-  <li><b>pacman.py</b> - The main file that runs Pacman games. This file also describes a Pacman GameState types.</li>
-  <li><b>game.py</b> - The logic behind how the Pacman world works.</li>
-  <li><b>util.py</b> - Useful data structures for implementing search algorithms.</li>
+  <li><b>SecurityConfiguration.java</b> - </li>
+  <li><b>ThymeleafConfiguration.java</b> - </li>
+  <li><b>WebMvcConfiguration.java</b> - </li>
+
+  <li><b>AuthorizationController.java</b> - </li>
+  <li><b>FollowController.java</b> - </li>
+  <li><b>TweetController.java</b> - </li>
+  <li><b>UserController.java</b> - </li>
+
+  <li><b>Role.java</b> - </li>
+  <li><b>Tag.java</b> - </li>
+  <li><b>Tweet.java</b> - </li>
+  <li><b>TweetDisplay.java</b> - </li>
+  <li><b>UserProfile.java</b> - </li>
+
+  <li><b>RoleRepository.java</b> - </li></b> - </li>
+  <li><b>TagRepository.java</b> - </li></b> - </li>
+  <li><b>TweetRepository.java</b> - </li></b> - </li>
+  <li><b>UserRepository.java</b> - </li></b> - </li>
+
+  <li><b>TweetService.java</b> - </li></b> - </li>
+  <li><b>UserService.java</b> - </li></b> - </li>
+
+  <li><b>custom.css</b> - </li></b> - </li>
+  <li><b>custom.js</b> - </li></b> - </li>
+
+  <li><b>feed.html</b> - </li></b> - </li>
+  <li><b>login.html</b> - </li></b> - </li>
+  <li><b>newTweet.html</b> - </li></b> - </li>
+  <li><b>registration.html</b> - </li></b> - </li>
+  <li><b>taggedTweets.html</b> - </li></b> - </li>
+  <li><b>user.html</b> - </li></b> - </li>
+  <li><b>users.html</b> - </li></b> - </li>
+
+  <li><b>header.html</b> - </li></b> - </li>
+  <li><b>navbar.html</b> - </li></b> - </li>
+  <li><b>tweetListheader.html</b> - </li></b> - </li>
+  <li><b>tweetlist.html</b> - </li></b> - </li>
+
+  <li><b>application.properties</b> - </li>
+  <li><b>data.sql</b> - </li>
 </ul>
 
 <h3>Some other supporting files</h3>
