@@ -60,29 +60,29 @@
   <li><b>TweetDisplay.java</b> - </li>
   <li><b>UserProfile.java</b> - </li>
 
-  <li><b>RoleRepository.java</b> - </li></b> - </li>
-  <li><b>TagRepository.java</b> - </li></b> - </li>
-  <li><b>TweetRepository.java</b> - </li></b> - </li>
-  <li><b>UserRepository.java</b> - </li></b> - </li>
+  <li><b>RoleRepository.java</b> - </li>
+  <li><b>TagRepository.java</b> - </li>
+  <li><b>TweetRepository.java</b> - </li>
+  <li><b>UserRepository.java</b> - </li>
 
-  <li><b>TweetService.java</b> - </li></b> - </li>
-  <li><b>UserService.java</b> - </li></b> - </li>
+  <li><b>TweetService.java</b> - </li>
+  <li><b>UserService.java</b> - </li>
 
-  <li><b>custom.css</b> - </li></b> - </li>
-  <li><b>custom.js</b> - </li></b> - </li>
+  <li><b>custom.css</b> - </li>
+  <li><b>custom.js</b> - </li>
 
-  <li><b>feed.html</b> - </li></b> - </li>
-  <li><b>login.html</b> - </li></b> - </li>
-  <li><b>newTweet.html</b> - </li></b> - </li>
-  <li><b>registration.html</b> - </li></b> - </li>
-  <li><b>taggedTweets.html</b> - </li></b> - </li>
-  <li><b>user.html</b> - </li></b> - </li>
-  <li><b>users.html</b> - </li></b> - </li>
+  <li><b>feed.html</b> - </li>
+  <li><b>login.html</b> - </li>
+  <li><b>newTweet.html</b> - </li>
+  <li><b>registration.html</b> - </li>
+  <li><b>taggedTweets.html</b> - </li>
+  <li><b>user.html</b> - </li>
+  <li><b>users.html</b> - </li>
 
-  <li><b>header.html</b> - </li></b> - </li>
-  <li><b>navbar.html</b> - </li></b> - </li>
-  <li><b>tweetListheader.html</b> - </li></b> - </li>
-  <li><b>tweetlist.html</b> - </li></b> - </li>
+  <li><b>header.html</b> - </li>
+  <li><b>navbar.html</b> - </li>
+  <li><b>tweetListheader.html</b> - </li>
+  <li><b>tweetlist.html</b> - </li>
 
   <li><b>application.properties</b> - </li>
   <li><b>data.sql</b> - </li>
