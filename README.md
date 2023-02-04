@@ -126,58 +126,6 @@
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-<!-- SCENARIO3 -->
-<h2 id="scenario3"> :small_orange_diamond: Scenario 3: Finding the best path using Uniform Cost Search</h2>
-
-<p>I have implemented the uniform-cost graph search (UCS) algorithm in the uniformCostSearch function in <code>search.py</code>.</p>
-<p>While BFS will find a fewest-actions path to the goal, UCS will find paths that are “best” in other senses.</p>
-<p>UCS agents differ only in the cost function they use.</p>
-<p>The Pacman will quickly find a solution via running the following commands:</p>
-
-<pre><code>$ python pacman.py -l mediumMaze -p SearchAgent -a fn=ucs</code></pre>
-<pre><code>$ python pacman.py -l mediumDottedMaze -p StayEastSearchAgent</code></pre>
-<pre><code>$ python pacman.py -l mediumScaryMaze -p StayWestSearchAgent</code></pre>
-
-<p align="center"> 
-<img src="gif/UCS.gif" alt="Animated gif UCS Algorithm" height="282px" width="637">
-</p>
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-<!-- SCENARIO4 -->
-<h2 id="scenario4"> :small_orange_diamond: Scenario 4: Finding the best path using A* search algorithm</h2>
-
-<p>I have implemented the A* graph search algorithm in the aStarSearch function in <code>search.py</code>.</p>
-<p>I used Manhattan distance as the heuristic function.</p>
-<p>A* finds the optimal solution slightly faster than Uniform Cost Search.</p>
-<p>The Pacman will quickly find a solution via running the following command:</p>
-
-<pre><code>$ python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic</code></pre>
-
-<p align="center"> 
-<img src="gif/A.gif" alt="Animated gif A* search Algorithm" height="420px" width="420px">
-</p>
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-<!-- SCENARIO5 -->
-<h2 id="scenario5"> :small_orange_diamond: Scenario 5: Finding All the Corners</h2>
-
-<p>I have implemented a search algorithm in <code>searchAgents.py</code> that helps Pacman agent to find the shortest path through the maze that touches all four corners.</p>
-
-<p>The Pacman will quickly find a solution via running the following commands:</p>
-
-<pre><code>$ python pacman.py -l tinyCorners -p SearchAgent -a fn=bfs,prob=CornersProblem</code></pre>
-<pre><code>$ python pacman.py -l mediumCorners -p SearchAgent -a fn=bfs,prob=CornersProblem</code></pre>
-
-<p align="center"> 
-<img src="gif/All Corners.gif" alt="Animated gif Finding All of the Corners" height="40%" width="40%">
-</p>
-
-
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
 <!-- CREDITS -->
 <h2 id="credits"> :scroll: Credits</h2>
 
