@@ -174,56 +174,13 @@
 <img src="gif/All Corners.gif" alt="Animated gif Finding All of the Corners" height="40%" width="40%">
 </p>
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-<!-- SCENARIO6 -->
-<h2 id="scenario6"> :small_orange_diamond: Scenario 6: Corners Problem - Admissible and Consistent Heuristic</h2>
-
-<p>I have implemented a non-trivial non-negative consistent heuristic function that returns 0 at every goal state and never returns a negative value.</p>
-<p>This function is both <b><i>Admissible</b></i> and <b><i>Consistent</b></i> and has been written in <code>searchAgents.py.</code></p>
-
-<p>The Pacman will quickly find a solution via running the following command:</p>
-
-<pre><code>$ python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5</code></pre>
-
-<p align="center"> 
-<img src="gif/Corner Heuristic.gif" alt="Animated gif Corners Problem" height="282px" width="637">
-</p>
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-<!-- SCENARIO7 -->
-<h2 id="scenario7"> :small_orange_diamond: Scenario 7: Eating All of The Dots</h2>
-
-<p>I have implemented a heuristic function that helps Pacman agent to eat all the food in as few steps as possible.</p>
-<p>The Pacman will quickly find a solution via running the following command:</p>
-
-<pre><code>$ python pacman.py -l trickySearch -p AStarFoodSearchAgent</code></pre>
-
-<p align="center"> 
-<img src="gif/All Dots.gif" alt="Animated gif Eating All of The Dots" height="282px" width="637">
-</p>
-
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-<!-- SCENARIO8 -->
-<h2 id="scenario8"> :small_orange_diamond: Scenario 8: Suboptimal Search</h2>
-
-<p>In this scenario, I have implemented a function that helps Pacman agent to find a path to the closest dot.</p>
-<p>This function has been written in <code>searchAgents.py</code></p>
-<p>The Pacman will quickly find a solution via running the following command:</p>
-
-<pre><code>$ python pacman.py -l bigSearch -p ClosestDotSearchAgent -z .5</code></pre>
-
-<p align="center"> 
-<img src="gif/Suboptimal Search.gif" alt="Animated gif Suboptimal Search" height="282px" width="637">
-</p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <!-- CREDITS -->
 <h2 id="credits"> :scroll: Credits</h2>
 
-Acknowledgements: Based on UC Berkeley's Pacman AI project, <a href=https://github.com/ma-shamshiri/Pacman-Game#readme>github.com/ma-shamshiri/Pacman-Game#readme</a>
+Acknowledgements: Based on Mohammad Amin Shamshiri's README on <a href=https://github.com/ma-shamshiri/Pacman-Game#readme>github.com/ma-shamshiri/Pacman-Game#readme</a>
 
 
