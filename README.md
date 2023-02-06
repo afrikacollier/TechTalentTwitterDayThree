@@ -108,8 +108,9 @@
 <!-- GETTING STARTED -->
 <h2 id="getting-started"> :book: Getting Started</h2>
 
-<p>You are able to start the game by typing the following commands in the command line:</p>
+<p>You are able to start the application by typing the following commands in the command line:</p>
 <pre><code>$ mvn spring-boot:run</code></pre>
+<p align="justify">Eclipse already has the lombok (maven) dependency in your pom.xml file. If you are using VS Code, you also need to install Lombok Annotations Support for VS Code and SQL Server (mssql) extensions. If you are using IntelliJ you need to install the Spring Assistant plugin.</p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
