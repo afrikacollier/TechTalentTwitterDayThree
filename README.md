@@ -90,17 +90,17 @@
 
 <h3>Some other supporting files</h3>
 <ul>
-  <li><b>graphicsDisplay.py</b> - Graphics for Pacman.</li>
-  <li><b>graphicsUtils.py</b> - Support for Pacman graphics.</li>
-  <li><b>textDisplay.py</b> - ASCII graphics for Pacman.</li>
-  <li><b>ghostAgents.py</b> - Agents to control ghosts.</li>
-  <li><b>keyboardAgents.py</b> - Keyboard interfaces to control Pacman.</li>
-  <li><b>layout.py</b> - Code for reading layout files and storing their contents.</li>
-  <li><b>autograder.py</b> - Project autograder.</li>
-  <li><b>testParser.py</b> - Parses autograder test and solution files.</li>
-  <li><b>testClasses.py</b> - General autograding test classes.</li>
-  <li><b>test_cases/</b> - Directory containing the test cases for each scenario.</li>
-  <li><b>searchTestClasses.py</b> - Project specific autograding test classes.</li>
+  <li><b></b> - </li>
+  <li><b></b> - </li>
+  <li><b></b> - </li>
+  <li><b></b> - </li>
+  <li><b></b> - </li>
+  <li><b></b> - </li>
+  <li><b></b> - </li>
+  <li><b></b> - </li>
+  <li><b></b> - </li>
+  <li><b></b> - </li>
+  <li><b></b> - </li>
 </ul>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
